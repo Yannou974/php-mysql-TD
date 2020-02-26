@@ -1,35 +1,38 @@
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="utf-8" />
-<title>mysql-php</title>
+<title>Ma page web</title>
 </head>
 <body>
-<h1>mysql test</h1>
+<h1>Ma page web</h1>
+		
+		
 		<?php
-		$username = 'sinbrive'; 
+		$username = "sinbrive"; 
 		$pass = "tsin2020"; 
 		$host = "db4free.net:3306"; 
-		$dbname = 'sinbase'; 
-
-		$options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'); 
-
-		try 
-		{ 
-			$db = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8", $username, $pass, $options); 
-		} 
-		catch(PDOException $ex) 
-		{ 
-			die("Failed to connect to the database: " . $ex->getMessage()); 
-		} 
-				
-		$stm = $db->query("SELECT * FROM table_mesures");
-
-		$rows = $stm->fetchAll(PDO::FETCH_NUM);
-
-		foreach($rows as $row) {
-
-			echo $row[0].' '.$row[1].' '.$row[2].' '.$row[3].'<br>';
-		}
+		$dbname = "sinbase"; 
 		
-		?>	
+		$con = mysqli_connect($host, $username, $pass);
+		if (!$con) {
+		  die('Could not connect: ' . mysqli_error($con));
+		}
+
+		mysqli_select_db($con, $dbname) or die ('Can\'t use foo : ' . mysqli_error($con));
+		
+		$query = "SELECT * FROM table_mesures";
+
+		$result = mysqli_query( $con, $query ); 
+		if (!$result) {
+			echo "Erreur : " . mysqli_error($con);
+		} else {
+			while ($record = mysqli_fetch_row($result)) {
+				echo "$record[1]  $record[0] \n";
+			}
+		}
+		mysqli_close($con);
+		?>			
+		
 	</body>
 </html>
