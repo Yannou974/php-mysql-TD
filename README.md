@@ -4,7 +4,7 @@ Porter le site JS en Php
 
 Le sécuriser par un login
 
-Gérer le parc informatique (PC) des salles au lycée
+Gérer le parc informatique (uniquement les PC) du lycée
 
 Pour chaque PC : Num, Num salle, Mac, IP/masque (et par calcul : réseau, diffusion, ...)
 * consultation (par critères divers)
