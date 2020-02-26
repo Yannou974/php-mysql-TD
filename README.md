@@ -10,3 +10,4 @@ Pour chaque PC : Num, Num salle, Mac, IP/masque (et par calcul : réseau, diffus
 * consultation (par critères divers)
 * ajout
 * suppression
+* vérifier si des PC sélectionnés peuvent communiquer
