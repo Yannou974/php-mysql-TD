@@ -19,7 +19,7 @@
 		  die('Could not connect: ' . mysqli_error($con));
 		}
 
-		mysqli_select_db($con, $dbname) or die ('Can\'t use foo : ' . mysqli_error($con));
+		mysqli_select_db($con, $dbname) or die ('Can\'t use db : ' . mysqli_error($con));
 		
 		$query = "SELECT * FROM table_mesures";
 
