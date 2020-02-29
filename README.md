@@ -12,7 +12,7 @@ Travail à faire :
 
     - Gérer le parc informatique (uniquement les PC) du lycée
 
-    *Pour chaque PC : Num, Num salle, Mac, IP/masque (et par calcul : réseau, diffusion, ...)*
+    * Pour chaque PC : Num, Num salle, Mac, IP/masque (et par calcul : réseau, diffusion, ...)
 
     - consultation (par critères divers) : pour chaque PC afficher les caractéristiques du réseau correspondant (voir TD Javascript)
 
