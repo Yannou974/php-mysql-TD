@@ -9,22 +9,13 @@
 	
 		<?php
 		$username = "sinbrive"; 
-		$pass = "xxxx"; 
+		$pass = "xxx"; 
 		$host = "db4free.net:3306"; 
 		$dbname = "sinbase"; 
 		
-		try 
-		{ 
-			$myPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass);
-		}
-		catch(PDOException $ex) 
-		{ 
-			die("Failed to connect to the database: " . $ex->getMessage()); 
-		} 
-
-		$result = $myPDO->query("SELECT * FROM table_mesures");
+		$myPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass);
 		
-		$rows = $result->fetchAll();
+		$rows = $myPDO->query("SELECT * FROM table_mesures");
 		
 		foreach($rows as $row) {
 
@@ -63,4 +54,34 @@
 */
 		?>			
 		
+
+<?php 
+/*		
+		$username = "sinbrive"; 
+		$pass = "xxxx"; 
+		$host = "db4free.net:3306"; 
+		$dbname = "sinbase"; 
+		
+		try 
+		{ 
+			$myPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass);
+		}
+		catch(PDOException $ex) 
+		{ 
+			die("Failed to connect to the database: " . $ex->getMessage()); 
+		} 
+
+		$result = $myPDO->query("SELECT * FROM table_mesures");
+		
+		$rows = $result->fetchAll(fetchAll(PDO::FETCH_ASSOC);
+		
+		foreach($rows as $row) {
+
+			echo $row[0].' '.$row[1].' '.$row[2].' '.$row[3].'<br>';
+		}
+		
+		$myPDO=null;			
+*/
+		?>	
+
 		
