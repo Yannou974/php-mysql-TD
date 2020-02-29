@@ -2,15 +2,73 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Ma page web</title>
+<title>TSIN</title>
 </head>
 <body>
-<h1>Ma page web</h1>
+<h1>Parc Informatique Réaumur</h1>
 		
 		
 		<?php
 		$username = "sinbrive"; 
-		$pass = "tsin2020"; 
+		$pass = "xxxx"; 
+		$host = "db4free.net:3306"; 
+		$dbname = "sinbase"; 
+		
+		try 
+		{ 
+			$myPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass);
+		}
+		catch(PDOException $ex) 
+		{ 
+			die("Failed to connect to the database: " . $ex->getMessage()); 
+		} 
+
+		$result = $myPDO->query("SELECT * FROM table_mesures");
+		
+		$rows = $result->fetchAll();
+		
+		foreach($rows as $row) {
+
+			echo $row[0].' '.$row[1].' '.$row[2].' '.$row[3].'<br>';
+		}
+		
+		$myPDO=null;
+		?>			
+		
+	</body>
+</html>
+
+<?php
+/*		$username = "sinbrive"; 
+		$pass = "xxxx"; 
+		$host = "db4free.net:3306"; 
+		$dbname = "sinbase"; 
+		
+
+		$mysqli = new mysqli($host, $username, $pass, $dbname);
+
+		if (!$mysqli) {
+		  die('Could not connect: ' . mysqli_error($mysqli));
+		}
+
+		$result = $mysqli->query("SELECT * FROM table_mesures");
+		
+		if (!$result) {
+			echo "Erreur : " . mysqli_error($mysqli);
+		} else {
+			while ($record = mysqli_fetch_row($result)) {
+				echo "$record[1]  $record[0] \n";
+			}
+		}
+		mysqli_close($mysqli);
+*/
+		?>			
+		
+
+<?php 
+/*
+		$username = "sinbrive"; 
+		$pass = "xxxx"; 
 		$host = "db4free.net:3306"; 
 		$dbname = "sinbase"; 
 		
@@ -19,7 +77,7 @@
 		  die('Could not connect: ' . mysqli_error($con));
 		}
 
-		mysqli_select_db($con, $dbname) or die ('Can\'t use db : ' . mysqli_error($con));
+		mysqli_select_db($con, $dbname) or die ('Can\'t use foo : ' . mysqli_error($con));
 		
 		$query = "SELECT * FROM table_mesures";
 
@@ -32,7 +90,7 @@
 			}
 		}
 		mysqli_close($con);
-		?>			
+*/
+		?>	
+
 		
-	</body>
-</html>
