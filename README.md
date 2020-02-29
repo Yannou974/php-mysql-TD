@@ -8,21 +8,21 @@ Gestion d'un parc informatique (on se limite aux terminaux PC).
 
 Travail à faire :
 
-    Porter le site JS en Php
+    - Porter le site JS en Php
 
-    Gérer le parc informatique (uniquement les PC) du lycée
+    - Gérer le parc informatique (uniquement les PC) du lycée
 
-    Pour chaque PC : Num, Num salle, Mac, IP/masque (et par calcul : réseau, diffusion, ...)
+    'Pour chaque PC : Num, Num salle, Mac, IP/masque (et par calcul : réseau, diffusion, ...)'
 
-    consultation (par critères divers) : pour chaque PC afficher les caractéristiques du réseau correspondant (voir TD Javascript)
+    - consultation (par critères divers) : pour chaque PC afficher les caractéristiques du réseau correspondant (voir TD Javascript)
 
-    ajout d'un PC
+    - ajout d'un PC
 
-    suppression d'un PC
+    - suppression d'un PC
 
-    mise à jour d'un PC
+    - mise à jour d'un PC
 
-    vérifier si des PC sélectionnés peuvent communiquer
+    - vérifier si des PC sélectionnés peuvent communiquer
 
 Pour chaque PC : adresse MAC, Adresse IP/Masque, Salle, Identifiant ...
 
