@@ -6,8 +6,7 @@
 </head>
 <body>
 <h1>Parc Informatique Réaumur</h1>
-		
-		
+	
 		<?php
 		$username = "sinbrive"; 
 		$pass = "xxxx"; 
