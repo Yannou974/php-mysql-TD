@@ -15,7 +15,7 @@
 		
 		$myPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $pass);
 	
-		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$myPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		
 		$rows = $myPDO->query("SELECT * FROM table_mesures");
 		
