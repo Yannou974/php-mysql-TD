@@ -2,7 +2,7 @@
 
 ### TD1 - Création de BD et exploitation PHP
 Soit la la base de données avec une table décrivant une famille :
-![image](./tables_a_realiser.png)
+![image](https://github.com/sinbrive/php-mysl-TD-prof/blob/master/tables_a_realiser.png)
 
 La formulation de l'ordre de création de la table (image attachée) :
 ```lanagage sql:
@@ -72,7 +72,7 @@ Reprenez la base de données du TD1 et écrire une application permettant :
 
 - (optionnel) de consulter par un critère choisi dans une liste (formulaire)
 
-![image2](./exemple.png)
+![image2](https://github.com/sinbrive/php-mysl-TD-prof/blob/master/exemple.png)
 
 l'ordre d'insertion avec les variables PHP :
 ```language : php
