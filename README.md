@@ -74,7 +74,7 @@ Reprenez la base de données du TD1 et écrire une application permettant :
 
 ![image2](https://github.com/sinbrive/php-mysl-TD-prof/blob/master/exemple.png)
 
-Le TD2 est découpé en 4 étape : [étape 1](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape1), [étape 2](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape2), [étape 3](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape3), [étape 4](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape4). A chaque fois, un fichier index.php incomplet est donné. Votre travail est de le compléter et le tester.
+Le TD2 est découpé en 4 étape : [étape 1](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape1), [étape 2](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape2), [étape 3](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape3), [étape 4](https://github.com/sinbrive/php-mysql-TD-eleves/tree/master/TD2/etape4). A chaque fois, un fichier index.php incomplet est donné. Votre travail est de le compléter et le tester. Le résultat final attendu correspond à l'étape 4.
 
 l'ordre d'insertion avec les variables PHP :
 ```language : php
