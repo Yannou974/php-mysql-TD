@@ -10,8 +10,8 @@
             <input type="text" name="nom" value="">
             <input type="text" name="prenom" value="">
             <input type="text" name="statut" value=""> 
-            <input type="text" name="date" vlaue="0000-00-00">
-            <input type="submit" vlaue="Envoyer">
+            <input type="text" name="date" value="0000-00-00">
+            <input type="submit" value="Envoyer">
             
         </form>
         <?php
