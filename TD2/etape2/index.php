@@ -27,7 +27,7 @@ afficher juste ce qui vient d'être saisi (voir étape 1)-->
             echo "<div>$statut<div>";
             // si la date est 0000-00-00 on affiche le contenu de la tables
             // sinon on affiche la valeur saisie
-            if ($date===_______) {
+            if ($date==='0000-00-00) {
                 lireContenu();
             }
             else echo "<div>$date<div>";
@@ -38,10 +38,11 @@ afficher juste ce qui vient d'être saisi (voir étape 1)-->
 
 <?php
 function lireContenu() {
-	$servername = _________
-	$username = _________
-	$password = _________
-	$dbname = _________
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "td1;
+	
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	$conn->set_charset('utf8');
@@ -52,12 +53,12 @@ function lireContenu() {
 	} 
 	
 	// lecture de toutes les données (TD1)
-	$sql = ______________________________
+	$sql = "select* from famille_tbl"; 
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
-			echo __________. "  " . __________. "   (" . __________."),    date de naissance : " . __________."<br>";
+			echo $row['nom']. "  " . $row['prenom']. "   (" .$row['statut'] ."),    date de naissance : " . $row['date']."<br>";
 		}
 	} else {
 		echo "0 results";
